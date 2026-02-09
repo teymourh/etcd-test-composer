@@ -53,9 +53,6 @@ COPY ./python-generate-traffic/parallel_driver_generate_traffic.py /opt/antithes
 # Copying additional resources into a resources folder
 COPY ./python-generate-traffic/resources/helper.py /opt/antithesis/resources/helper.py
 
-# Copy your test script to the specific path Antithesis scans
-COPY ./python-watch-integrity/singleton_driver_watch_integrity.py /opt/antithesis/test/v1/main/singleton_driver_watch_integrity.py
-RUN chmod +x /opt/antithesis/test/v1/main/singleton_driver_watch_integrity.py
 
 # GO:
 
